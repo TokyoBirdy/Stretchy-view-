@@ -1,8 +1,8 @@
 //
-//  StretchyView.swift
+//  StretchyView
 //  StretchyView
 //
-//  Created by ceciliah on 10/25/18.
+//  Created by ceciliah on 10/5/18.
 //  Copyright © 2018 Humlan. All rights reserved.
 //
 
@@ -101,11 +101,4 @@ class StretchyView:UIView {
         constraints.activate()
     }
 }
-
-extension Array where Element == NSLayoutConstraint {
-    func activate() {
-        NSLayoutConstraint.activate(self)
-    }
-}
-
 

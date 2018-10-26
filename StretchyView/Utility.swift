@@ -26,6 +26,12 @@ func constrain(view:UIView, within container:UIView, insets:UIEdgeInsets) -> [NS
     return constraints
 }
 
+extension Array where Element == NSLayoutConstraint {
+    func activate() {
+        NSLayoutConstraint.activate(self)
+    }
+}
+
 
 extension UIColor {
     static var random: UIColor {
